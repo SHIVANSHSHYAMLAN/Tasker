@@ -60,3 +60,5 @@ sealed class AllDestinations(val route : String){
         fun createRoute(itemId : Long) = "EditItems/$itemId"
     }
 }
+
+data class Notifications(val Channel_Id : String, val Channel_Name : String = "Task_Notification")
